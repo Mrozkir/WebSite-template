@@ -1,0 +1,20 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    @include responsive (mobile){
+        font-size: 1rem;
+    }
+    @include responsive (tablet){
+        font-size: 1.1rem;
+    }
+    @include responsive (desktop){
+        font-size: 1.2rem;        
+    }
+    @include responsive (large){
+        font-size: 1.5rem;
+    }
+}
